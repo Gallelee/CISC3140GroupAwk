@@ -1,7 +1,7 @@
 #!/usr/bin/awk -f
 #this program tracks the frequency at which squirrels are observed eating while also runningi
 BEGIN {
-FPAT = "([^,]*)|(\"[^\"]+\")"
+FPAT="([^,]*)|(\"[^\"]+\")"
 currentCount=0
 amCount=0
 pmCount=0
@@ -12,7 +12,8 @@ pmCount=0
 	
 	if($5 == "AM") amCount+=1
 	
-	if($5 == "PM") pmCount+=1	
+	if($5 == "PM") pmCount+=1
+	print $3		
 }
 }
 
