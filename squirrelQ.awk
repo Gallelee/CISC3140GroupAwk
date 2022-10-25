@@ -13,7 +13,7 @@ pmCount=0
 	if($5 == "AM") amCount+=1
 	
 	if($5 == "PM") pmCount+=1
-	print $3		
+		
 }
 }
 
