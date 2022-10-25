@@ -24,7 +24,6 @@ END {
     maxdate = -1
     min = FNR 
     mindate = -1
-    len = length(arr)
 
     #Find min and max
     for(x in arr){
