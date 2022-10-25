@@ -40,7 +40,7 @@ END {
     }
 
     maxday = substr(maxdate, 3, 2)
-    minday = substr(minday, 3, 2)
+    minday = substr(mindate, 3, 2)
 
     print "The day that saw the most approaches to humans was 10/" maxday "/18 with " max " approaches \n"
     print "The day that saw the least approaches to humans was 10/" minday "/18 with " min " approaches \n"  
