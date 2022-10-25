@@ -6,9 +6,9 @@ BEGIN {
     count=0
 }
 
-#25, 26
 { 
     if($27 == "true" ){ 
+        #If there was an approach, increase count for that date
         if(arr[$6] == ""){
             arr[$6] = 1
         } 
@@ -25,8 +25,8 @@ END {
     min = FNR 
     mindate = -1
     len = length(arr)
-    ind = 0
 
+    #Find min and max
     for(x in arr){
         if(arr[x] > max){
             max = arr[x]
@@ -37,7 +37,6 @@ END {
             min = arr[x]
             mindate = x
         }
-        ind++
     }
 
     maxday = substr(maxdate, 3, 2)
