@@ -40,6 +40,6 @@ END {
         ind++
     }
 
-    print "The day that saw the most approaches to humans was 10/" (maxday+6) "/18 \n"
-    print "The day that saw the least approaches to humans was 10/" (minday+6) "/18 \n"  
+    print "The day that saw the most approaches to humans was 10/" (maxday+6) "/18 with " max " approaches \n"
+    print "The day that saw the least approaches to humans was 10/" (minday+6) "/18 with " min " approaches \n"  
 }
