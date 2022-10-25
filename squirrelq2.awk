@@ -21,25 +21,28 @@ BEGIN {
 
 END {
     max = 0
-    maxday = -1
+    maxdate = -1
     min = FNR 
-    minday = -1
+    mindate = -1
     len = length(arr)
     ind = 0
 
     for(x in arr){
-        if(x > max){
-            max = x
-            maxday = ind
+        if(arr[x] > max){
+            max = arr[x]
+            maxdate = x
         }
 
-        if(x < min){
-            min = x
-            minday = ind
+        if(arr[x] < min){
+            min = arr[x]
+            mindate = x
         }
         ind++
     }
 
-    print "The day that saw the most approaches to humans was 10/" (maxday+6) "/18 with " max " approaches \n"
-    print "The day that saw the least approaches to humans was 10/" (minday+6) "/18 with " min " approaches \n"  
+    maxday = substr(maxdate, 3, 2)
+    minday = substr(minday, 3, 2)
+
+    print "The day that saw the most approaches to humans was 10/" maxday "/18 with " max " approaches \n"
+    print "The day that saw the least approaches to humans was 10/" minday "/18 with " min " approaches \n"  
 }
