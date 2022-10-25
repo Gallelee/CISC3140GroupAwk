@@ -16,13 +16,10 @@ BEGIN{
 
 END{
  
-# Built in function to sort 
- PROCINFO["sorted_in"] = "@val_num_desc"
-
 # Prints the Occurences for each Adult age aquirrel  
  print ("Number of Occurrences for each Adult: ");
  for (time in countAdu)
-    print time,countAdu[time]; 
+    print time,countAdu[time]; cd
 
  printf("\n")
 
